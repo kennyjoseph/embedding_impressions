@@ -1,9 +1,9 @@
-This repository contains all code and data necessary to replicate all results in the main article and the appendix of our paper *When do Word Embeddings Accurately Reflect Surveys on our Impressions of People?*.  If you use the new data we collected, please cite our paper as follows:
+This repository contains all code and data necessary to replicate all results in the main article and the appendix of our paper *When do Word Embeddings Accurately Reflect Surveys on our Beliefs about People?*.  If you use the new data we collected, please cite our paper as follows:
 
 ```
 
 @inproceedings{joseph_when_2020,
-  title = {{W}hen do {W}ord {E}mbeddings {A}ccurately {R}eflect {S}urveys on our {I}mpressions of {P}eople?},
+  title = {{W}hen do {W}ord {E}mbeddings {A}ccurately {R}eflect {S}urveys on our {Beliefs} about {P}eople?},
   booktitle = {Proceedings of the 58th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{ACL}}'2020)},
   author = {Joseph, Kenneth and Morgan, Jonathan M.},
   year = {2020}
@@ -16,7 +16,7 @@ This repository contains all code and data necessary to replicate all results in
 
 # Code
 
-- ```generate_embedding_measures.ipynb``` - This python jupyter notebook generates all embedding-based measures of impressions used in the paper
+- ```generate_embedding_measures.ipynb``` - This python jupyter notebook generates all embedding-based measures of beliefs used in the paper
 - ```paper_results.R``` - All results presented in the main portion of the paper, as well as Figures 5-9 in the appendix.
 - ```survey_data_statistics_for_appendix.R``` - This file generates plots that summarize the data in the appendix (Figures 1-4).  Probably the best place to start if you're just interested in our survey data.
 
@@ -26,9 +26,9 @@ We use several different survey datasets, including two we collected ourselves a
 
 ## Our survey data
 
-### New impressions dataset
+### New beliefs dataset
 
-The file ```our_impression_data_clean.csv``` contains one row per annotator/dimension/identity combination. See the paper for full details on the questions, annotator demographics, etc.
+The file ```our_belief_data_clean.csv``` contains one row per annotator/dimension/identity combination. See the paper for full details on the questions, annotator demographics, etc.
 
 - ```qname``` - A question identifier. You likely will not need this
 - ```qtype``` - The type of dimension; either ```affective```, ```association```, or ```trait```
